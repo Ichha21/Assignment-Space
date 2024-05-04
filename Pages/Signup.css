@@ -1,0 +1,105 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(to bottom, #d197e0, #7640c7);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.signup-content {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(209, 155, 224);
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  position: relative;
+}
+
+.signup-content h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.signup-container form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+.signup-container .form_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.signup-container label {
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+  color: black;
+  transition: .2s;
+}
+
+.signup-container select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  appearance: none;
+}
+
+.signup-container button {
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: white;
+}
+
+.signup-container button:hover {
+  background-color: #FE79A2
+}
+
+.signup-container .existing_account {
+  margin-top: 15px;
+  text-align: center;
+  color: lightgray;
+}
+
+.signup-container label {
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+  color: black;
+  transition: .2s;
+  pointer-events: none; /* Disable pointer events for the label */
+}
+
+.signup-container input:focus ~ label,
+.signup-container input:valid ~ label {
+  transform: translate(10px, -20px);
+  font-size: 10px;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+}

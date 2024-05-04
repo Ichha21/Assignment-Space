@@ -1,0 +1,43 @@
+#loginButton,
+#signupButton {
+  border: none;
+  margin-top: 10px;
+  padding: 5px 10px; /* Adjust padding to increase width */
+  border-radius: 100px; /* Adjust border-radius for the curve */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#loginButton {
+  background-color: #ff66b2;
+  color: white;
+}
+
+#signupButton {
+  background-color: white;
+  color: #ff66b2;
+}
+
+/* Add this CSS to your existing styles or Question.css */
+
+.notification-icon {
+  margin-right: 20px;
+}
+
+.top-quote, .notification-icon {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.top-quote a, .notification-icon a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.top-quote a:hover, .notification-icon a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
